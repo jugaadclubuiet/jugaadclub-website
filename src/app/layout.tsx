@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Navbar } from "@/components/ComponentExporter";
 
 export const metadata: Metadata = {
   title: "Jugaad",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-parallax bg-no-repeat bg-cover">
+        <Navbar/>
+        {children}
+        </body>
     </html>
   );
 }

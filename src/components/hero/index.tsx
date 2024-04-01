@@ -15,9 +15,9 @@ const HeroSection = () => {
 			</div>
 			<div className="w-[78.25rem] flex flex-row items-center justify-center gap-[0rem_3rem] z-[1] text-left text-[2.375rem] font-kaisei-opti">
 				<b className="w-[16.938rem] relative tracking-[0.13em] leading-[120.31%] flex items-center h-[7.688rem] shrink-0 [text-shadow:7px_0_0_#302f2a]">Frugal</b>
-				<Image className="w-[1.3rem]  h-[1.3rem] overflow-hidden shrink-0 z-[2]" alt="" src="/circle.png" width="80" height="80"/>
+				<Image className="w-[1.3rem]  h-[1.3rem] overflow-hidden shrink-0 z-[2]" alt="img" src="/circle.png" width="80" height="80"/>
 				<b className="w-[25rem] relative tracking-[0.13em] leading-[120.31%] flex items-center h-[7.438rem] shrink-0 [text-shadow:7px_0_0_#302f2a]">Inclusive</b>
-				<Image className="w-[1.3rem]  h-[1.3rem] overflow-hidden shrink-0 z-[3]" alt="" src="/circle.png " width="80" height="80"/>
+				<Image className="w-[1.3rem]  h-[1.3rem] overflow-hidden shrink-0 z-[3]" alt="img" src="/circle.png " width="80" height="80"/>
 				<b className="w-[22.063rem] relative tracking-[0.13em] leading-[120.31%] flex text-center items-center justify-center h-[7.438rem] shrink-0 [text-shadow:7px_0_0_#302f2a]">Flexible</b>
 			</div>
 		</div>
