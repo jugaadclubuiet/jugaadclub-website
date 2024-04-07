@@ -1,5 +1,10 @@
-export type links={
-    id: number,
-    path:string,
-    name:string,
+import { IconType } from "react-icons";
+
+export interface NavigationLinks {
+  name: string;
+  to: string;
+}
+
+export interface SidebarLinks extends NavigationLinks {
+  iconName: IconType;
 }
