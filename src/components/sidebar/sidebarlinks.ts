@@ -1,24 +1,24 @@
 import {
   FaDiscord,
   FaSquareInstagram,
-  FaTelegram,
-  FaSquareWhatsapp,
+  FaYoutube,
+  FaLinkedin,
 } from "react-icons/fa6";
 import { SidebarLinks } from "@/types/Links";
 
 const links: SidebarLinks[] = [
   {
-    name: "Whatsapp",
-    iconName: FaSquareWhatsapp,
-    to: "https://whatsapp.com",
+    name: "Linked In",
+    iconName: FaLinkedin,
+    to: "https://www.linkedin.com/company/jugaad-robotics-club-uiet",
   },
-  { name: "Telegram", iconName: FaTelegram, to: "https://telegram.com" },
+  { name: "Youtube", iconName: FaYoutube, to: "https://www.youtube.com/@jugaadclubuiet" },
   {
     name: "Instagram",
     iconName: FaSquareInstagram,
-    to: "https://instagram.com",
+    to: "https://www.instagram.com/jugaadclubuiet/",
   },
-  { name: "Discord", iconName: FaDiscord, to: "https://discord.com" },
+  { name: "Discord", iconName: FaDiscord, to: "https://discord.com/invite/d9Ha63Yjjq" },
 ];
 
 export default links;
