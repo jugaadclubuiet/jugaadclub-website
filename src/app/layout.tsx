@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-parallax bg-no-repeat bg-cover">
-        <Navbar/>
+        <Navbar />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
