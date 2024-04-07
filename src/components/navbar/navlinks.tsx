@@ -1,24 +1,9 @@
-import {links} from "@/types/links";
-const navlinks: links[]=[
-    {
-        id: 1,
-        path:"/",
-        name: "Home",
-    },
-    {
-        id: 2,
-        path:"/about",
-        name: "About",
-    },
-    {
-        id: 3,
-        path:"/activities",
-        name: "Activities",
-    },
-    {
-        id: 4,
-        path:"/team",
-        name: "Team",
-    },
-]
-export default navlinks;
+import { NavigationLinks } from "@/types/Links";
+
+const links: NavigationLinks[] = [
+  { name: "Home", to: "/" },
+  { name: "About", to: "/aboutus" },
+  { name: "Activities", to: "/activities" },
+];
+
+export default links;
