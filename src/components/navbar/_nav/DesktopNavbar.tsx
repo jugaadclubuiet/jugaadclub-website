@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { NavigationLinks } from "@/types/Links";
+import {NavigationLinks}  from "@/types/links";
 import { f_inter_700 } from "@/styles/fonts";
 import { FaSearch } from "react-icons/fa";
 

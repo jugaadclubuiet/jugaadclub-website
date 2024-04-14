@@ -5,7 +5,7 @@ import { f_judson_700, f_dmsans_700, f_kaiseiOpti_700 } from "@/styles/fonts";
 
 type Props = {};
 
-const masthead = (props: Props) => {
+const Masthead = (props: Props) => {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -77,4 +77,4 @@ const masthead = (props: Props) => {
   );
 };
 
-export default masthead;
+export default Masthead;

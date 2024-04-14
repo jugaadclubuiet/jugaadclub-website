@@ -4,7 +4,7 @@ import {
   FaYoutube,
   FaLinkedin,
 } from "react-icons/fa6";
-import { SidebarLinks } from "@/types/Links";
+import { SidebarLinks } from "@/types/links";
 
 const links: SidebarLinks[] = [
   {

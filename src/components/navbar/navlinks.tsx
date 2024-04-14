@@ -1,4 +1,4 @@
-import { NavigationLinks } from "@/types/Links";
+import { NavigationLinks } from "@/types/links";
 
 const links: NavigationLinks[] = [
   { name: "Home", to: "/" },
