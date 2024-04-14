@@ -1,9 +1,18 @@
 import React from "react";
+import {
+  AboutMast,
+  AboutMission,
+  AboutWhatWeDo,
+  AboutAchievements,
+} from "../ComponentExporter";
 
 const About = () => {
   return (
     <>
-      <div>About Us</div>
+      <AboutMast />
+      <AboutMission />
+      <AboutWhatWeDo />
+      <AboutAchievements />
     </>
   );
 };
