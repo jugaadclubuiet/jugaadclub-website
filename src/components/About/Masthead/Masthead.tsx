@@ -1,12 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import { f_alata_400 } from "@/styles/fonts";
+import { LeftBg, RightBg } from "./bg";
 
 const Masthead = () => {
   return (
     <>
-      <div className="w-full min-h-screen flex flex-row items-center justify-center pt-16">
-        <div className="flex items-center flex-col justify-center px-4 py-5 w-1/2">
+      <div className="w-full min-h-screen flex flex-row items-center justify-center pt-16 relative">
+        <div className="absolute top-[0] left-0 w-[68%]">
+          <LeftBg />
+        </div>
+        <div className="absolute top-[0] right-8 w-[32%]">
+          <RightBg />
+        </div>
+        <div className="relative flex items-center flex-col justify-center px-4 py-5 w-1/2">
           <h1
             className={`uppercase text-white text-6xl ${f_alata_400.className} leading-none tracking-wide`}
             style={{
@@ -35,7 +42,7 @@ const Masthead = () => {
             </span>
           </p>
         </div>
-        <div className="p-1 w-1/2 flex items-center justify-center">
+        <div className="relative p-1 w-1/2 flex items-center justify-center">
           <Image
             src={"/team/team.jpg"}
             alt="Jugaad Team"
