@@ -49,7 +49,7 @@ const Masthead = () => {
             width={250}
             height={200}
             draggable={false}
-            className="aspect-video w-[500px] border-4 border-solid border-black rounded-[50px]"
+            className="w-[590px] h-[300px] border-4 border-solid border-black rounded-[50px]"
             style={{
               boxShadow: "20px 20px 4px 0px #282829",
             }}
