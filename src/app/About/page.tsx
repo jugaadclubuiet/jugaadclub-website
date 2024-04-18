@@ -1,9 +1,11 @@
 import React from "react";
+import { AboutPage } from "@/components/ComponentExporter";
 
-const About = () =>{
-    return(
-        <>
-        </>
-    )
-}
+const About = () => {
+  return (
+    <>
+      <AboutPage />
+    </>
+  );
+};
 export default About;
