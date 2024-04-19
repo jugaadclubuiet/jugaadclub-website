@@ -15,4 +15,6 @@ export { default as AboutMission } from "./About//Mission/Mission";
 export { default as AboutWhatWeDo } from "./About/WhatWeDo/WhatWeDo";
 export { default as AboutAchievements } from "./About/Achievement/Achievements";
 
+export { default as TeamPage } from "./Team/index";
+
 export { default as Footer } from "./footer/index";
