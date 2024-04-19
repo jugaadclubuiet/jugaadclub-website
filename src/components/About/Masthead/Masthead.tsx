@@ -23,14 +23,16 @@ const Masthead = () => {
         >
           What is Jugaad
         </h1>
-        <Image
-          src={"/team/team.jpg"}
-          alt="Jugaad Team"
-          width={250}
-          height={200}
-          draggable={false}
-          className="relative w-full max-w-md h-[250px] border-4 border-solid border-black rounded-[50px] my-5"
-        />
+        <div className="px-1">
+          <Image
+            src={"/team/team.jpg"}
+            alt="Jugaad Team"
+            width={250}
+            height={200}
+            draggable={false}
+            className="relative w-full max-w-md h-[250px] border-4 border-solid border-black rounded-[50px] my-5"
+          />
+        </div>
         <p className="relative flex flex-col items-start justify-start gap-10 text-white text-base py-8 px-2 sm:px-20 w-full text-center my-5 bg-[#000000ba]">
           <span>
             Jugaad at UIET, Panjab University, Chandigarh, transcends being just
