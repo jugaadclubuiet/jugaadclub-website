@@ -1,11 +1,13 @@
 import React from "react";
+import { TeamMast, TeamNamePage } from "../ComponentExporter";
 
 type Props = {};
 
 const Team = (props: Props) => {
   return (
     <>
-      <div>Team</div>
+      <TeamMast />
+      <TeamNamePage />
     </>
   );
 };
