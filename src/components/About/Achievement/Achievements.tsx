@@ -7,7 +7,7 @@ import "@/styles/flip_card.css";
 const Achievements = () => {
   return (
     <>
-      <div className="w-full flex flex-col items-center py-5 px-4">
+      <div className="w-full flex flex-col items-center py-5 px-4 my-10 mb-20">
         <h1
           className={`capitalize text-white my-4 mx-1 py-2 px-1 text-5xl md:text-6xl leading-none tracking-normal ${f_alata_400.className}`}
           style={{
@@ -19,7 +19,7 @@ const Achievements = () => {
         </h1>
         <div className="flex flex-row items-center flex-wrap justify-evenly w-full my-2 gap-8">
           {AchievementsImages.map((image, index) => (
-            <div className="flip-card w-[320px] h-[400px]" key={index}>
+            <div className="flip-card w-[320px] h-[390px]" key={index}>
               <div className="flip-card-inner w-full h-full">
                 <div className="flip-card-front w-full h-full">
                   <Image
