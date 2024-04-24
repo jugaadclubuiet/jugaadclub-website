@@ -16,7 +16,7 @@ const footer = (props: Props) => {
               <Image
                 src={"/Logo.png"}
                 alt="Logo"
-                width={100}
+                width={500}
                 height={100}
                 className="m-1 w-36 sm:w-52"
               />

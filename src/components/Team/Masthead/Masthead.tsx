@@ -39,12 +39,12 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Name of Student
+                    Pranav Gupta
                   </h2>
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
                   >
-                    Position
+                    President
                   </span>
                 </div>
               </div>
@@ -79,12 +79,12 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Name of Student
+                    Riya<br/>Bansal
                   </h2>
                   <span
-                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
+                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
                   >
-                    Position
+                    Vice President
                   </span>
                 </div>
               </div>
@@ -121,12 +121,12 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Name of Student
+                    kunal
                   </h2>
                   <span
-                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
+                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
                   >
-                    Position
+                    General Seceratory
                   </span>
                 </div>
               </div>
@@ -161,12 +161,12 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Name of Student
+                    Harsh Anand
                   </h2>
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
                   >
-                    Position
+                    Advisory
                   </span>
                 </div>
               </div>
@@ -201,12 +201,12 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Name of Student
+                    Pragun Gupta
                   </h2>
                   <span
-                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
+                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
                   >
-                    Position
+                    General Seceratory
                   </span>
                 </div>
               </div>
@@ -243,12 +243,12 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Name of Student
+                    Lovish Singla
                   </h2>
                   <span
-                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
+                    className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
                   >
-                    Position
+                    Non tech Lead
                   </span>
                 </div>
               </div>
@@ -283,12 +283,12 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Name of Student
+                    Ashish Sharma
                   </h2>
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
                   >
-                    Position
+                    Tech Lead 
                   </span>
                 </div>
               </div>
