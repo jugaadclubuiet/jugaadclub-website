@@ -111,7 +111,7 @@ const CustomSlider = (props: Props) => {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  width={150}
+                  width={500}
                   height={100}
                   className="w-full h-72 pt-5 pb-2 px-2"
                 />

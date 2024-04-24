@@ -27,7 +27,7 @@ const Masthead = () => {
           <Image
             src={"/team/team.jpg"}
             alt="Jugaad Team"
-            width={250}
+            width={5000}
             height={200}
             draggable={false}
             className="relative w-full max-w-md h-[250px] border-4 border-solid border-black rounded-[50px] my-5"
@@ -94,7 +94,7 @@ const Masthead = () => {
           <Image
             src={"/team/team.jpg"}
             alt="Jugaad Team"
-            width={250}
+            width={1000}
             height={200}
             draggable={false}
             className="w-[590px] h-[300px] border-4 border-solid border-black rounded-[50px]"

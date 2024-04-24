@@ -21,7 +21,7 @@ const WhatWeDo = () => {
             <Image
               src={"/team/1.jpg"}
               alt="1"
-              width={250}
+              width={500}
               height={250}
               draggable={false}
               className="border-2 border-solid border-white rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] absolute -left-[60px] -top-[10px]"
@@ -29,7 +29,7 @@ const WhatWeDo = () => {
             <Image
               src={"/team/2.jpg"}
               alt="2"
-              width={250}
+              width={500}
               height={250}
               draggable={false}
               className="border-2 border-solid border-white rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] absolute -left-[5px] -bottom-[70px]"
@@ -37,7 +37,7 @@ const WhatWeDo = () => {
             <Image
               src={"/team/3.jpg"}
               alt="3"
-              width={250}
+              width={500}
               height={250}
               draggable={false}
               className="border-2 border-solid border-white rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] relative -top-[20px] -right-[60px]"

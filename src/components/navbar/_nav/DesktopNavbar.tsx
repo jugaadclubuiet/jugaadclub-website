@@ -19,7 +19,7 @@ const DesktopNavbar = (props: Props) => {
             <Image
               src={"/Logo.png"}
               alt="Logo"
-              width={100}
+              width={400}
               height={100}
               className="m-1 w-20 md:w-32"
             />
