@@ -101,7 +101,7 @@ const CustomSlider = (props: Props) => {
             {props.images.map((image, i) => (
               <SwiperSlide
                 key={i}
-                className="bg-black border-4 border-solid border-white w-full h-full text-white flex items-center"
+                className="bg-black border-4 border-solid border-white w-full h-full text-white flex flex-col items-center"
               >
                 <h5
                   className={`${f_amaranth_400.className} text-nowrap text-2xl font-normal text-white text-center w-full bg-black p-5`}
