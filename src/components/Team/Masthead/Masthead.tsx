@@ -34,7 +34,7 @@ const Masthead = (props: Props) => {
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
-                  width={250}
+                  width={500}
                   height={250}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] sm:rounded-full rounded-md border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
@@ -74,7 +74,7 @@ const Masthead = (props: Props) => {
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
-                  width={250}
+                  width={500}
                   height={250}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
@@ -116,7 +116,7 @@ const Masthead = (props: Props) => {
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
-                  width={250}
+                  width={500}
                   height={250}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
@@ -156,7 +156,7 @@ const Masthead = (props: Props) => {
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
-                  width={250}
+                  width={500}
                   height={250}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[50%] lg:left-[20%]"
                 />
@@ -196,7 +196,7 @@ const Masthead = (props: Props) => {
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
-                  width={250}
+                  width={500}
                   height={250}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
@@ -238,7 +238,7 @@ const Masthead = (props: Props) => {
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
-                  width={250}
+                  width={500}
                   height={250}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
@@ -278,7 +278,7 @@ const Masthead = (props: Props) => {
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
-                  width={250}
+                  width={500}
                   height={250}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
