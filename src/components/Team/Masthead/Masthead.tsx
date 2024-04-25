@@ -18,7 +18,7 @@ const Masthead = (props: Props) => {
               WebkitTextStrokeColor: "#C4B567",
             }}
           >
-            MEET THE TEAM
+            Behind the Scenes: Our Team
           </h1>
         </div>
         <div className="w-full py-5 px-1 mt-10 relative flex flex-col items-start gap-24">

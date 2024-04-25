@@ -16,18 +16,11 @@ const Commons = ({
       <Navbar />
       <main
         className="w-full min-h-screen bg-black flex flex-row-reverse items-start justify-start"
-        style={{
-          background: `url(${
-            pathname == "/Team" ? "/teamBG.png" : "/bgImg.png"
-          })`,
-          backgroundSize: "cover",
-          objectFit: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        
       >
         <Sidebar />
         <div
-          className="w-full h-screen overflow-y-auto bg-transparent text-white"
+          className="w-full bg-transparent h-screen text-white relative"
           id="scrollable-container-parallax"
         >
           {children}
