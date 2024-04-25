@@ -10,9 +10,10 @@ const Masthead = (props: Props) => {
   return (
     <>
       <div className="w-full min-h-screen flex items-center flex-col pt-32 sm:pr-[48px] bg-[#ffffff23]">
+        {/* Heading */}
         <div className="w-full px-3 py-8 bg-[#ffffff8a] flex items-center justify-center">
           <h1
-            className={`uppercase text-4xl text-black ${f_inter_700.className} font-bold`}
+            className={`uppercase text-3xl lg:text-4xl text-black ${f_inter_700.className} font-bold`}
             style={{
               WebkitTextStrokeWidth: 1,
               WebkitTextStrokeColor: "#C4B567",
@@ -21,21 +22,23 @@ const Masthead = (props: Props) => {
             Behind the Scenes: Our Team
           </h1>
         </div>
-        <div className="w-full py-5 px-1 mt-10 relative flex flex-col items-start gap-24">
-          <div className="flex flex-row items-center justify-center gap-40 my-2 w-full">
+
+        {/* Blocks */}
+        <div className="w-full py-5 px-5 mt-20 relative flex flex-col items-start gap-[161px]">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-40 my-2 w-full">
             <div
-              className="bg-[#D9D9D9] w-fit relative px-5 py-4 border-2 border-solid border-black rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px]"
+              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
               style={{ boxShadow: "-5px 5px 5px #000000ba" }}
             >
-              <div className="p-1 flex flex-row">
+              <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
                   width={250}
                   height={250}
-                  className="w-[150px] h-[150px] rounded-full border-2 border-black border-solid absolute -top-[25%] -left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] sm:rounded-full rounded-md border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
-                <div className="pr-3 pl-12 py-2 flex flex-col items-center justify-between w-full max-w-[200px]">
+                <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
@@ -64,22 +67,22 @@ const Masthead = (props: Props) => {
               </div>
             </div>
             <div
-              className="bg-[#D9D9D9] w-fit relative px-5 py-4 border-2 border-solid border-black rounded-tl-[50px] rounded-tr-[50px] rounded-br-[50px]"
+              className="bg-[#D9D9D9] w-full max-w-xs lg:w-fit relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
               style={{ boxShadow: "5px 5px 5px #000000ba" }}
             >
-              <div className="p-1 flex flex-row">
+              <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
                   width={250}
                   height={250}
-                  className="w-[150px] h-[150px] rounded-full border-2 border-black border-solid absolute -top-[25%] -right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
-                <div className="pl-3 pr-12 py-2 flex flex-col items-center justify-between w-full max-w-[200px]">
+                <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:pr-4`}
                   >
-                    Riya<br/>Bansal
+                    Riya Bansal
                   </h2>
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
@@ -104,20 +107,20 @@ const Masthead = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center gap-40 w-full my-2">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-40 xl:gap-32 lg:gap-10 w-full my-2">
             <div
-              className="bg-[#D9D9D9] w-fit relative px-5 py-4 border-2 border-solid border-black rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px]"
+              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
               style={{ boxShadow: "-5px 5px 5px #000000ba" }}
             >
-              <div className="p-1 flex flex-row">
+              <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
                   width={250}
                   height={250}
-                  className="w-[150px] h-[150px] rounded-full border-2 border-black border-solid absolute -top-[25%] -left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
-                <div className="pr-3 pl-12 py-2 flex flex-col items-center justify-between w-full max-w-[200px]">
+                <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
@@ -146,18 +149,18 @@ const Masthead = (props: Props) => {
               </div>
             </div>
             <div
-              className="bg-[#D9D9D9] w-fit relative px-5 py-4 border-2 border-solid border-black rounded-tl-[50px] rounded-br-[50px]"
+              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-br-[50px]"
               style={{ boxShadow: "-5px 5px 5px #000000ba" }}
             >
-              <div className="p-1 flex flex-row">
+              <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
                   width={250}
                   height={250}
-                  className="w-[150px] h-[150px] rounded-full border-2 border-black border-solid absolute -top-[50%] left-[20%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[50%] lg:left-[20%]"
                 />
-                <div className="px-5 pb-2 pt-9 flex flex-col items-center justify-between w-full">
+                <div className="px-5 py-2 mt-6 flex flex-col items-center justify-between w-full">
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
@@ -186,18 +189,18 @@ const Masthead = (props: Props) => {
               </div>
             </div>
             <div
-              className="bg-[#D9D9D9] w-fit relative px-5 py-4 border-2 border-solid border-black rounded-tl-[50px] rounded-tr-[50px] rounded-br-[50px]"
+              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
               style={{ boxShadow: "5px 5px 5px #000000ba" }}
             >
-              <div className="p-1 flex flex-row">
+              <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
                   width={250}
                   height={250}
-                  className="w-[150px] h-[150px] rounded-full border-2 border-black border-solid absolute -top-[25%] -right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
-                <div className="pl-3 pr-12 py-2 flex flex-col items-center justify-between w-full max-w-[200px]">
+                <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
@@ -226,22 +229,22 @@ const Masthead = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center gap-40 w-full my-2">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-40 w-full my-2">
             <div
-              className="bg-[#D9D9D9] w-fit relative px-5 py-4 border-2 border-solid border-black rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px]"
+              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
               style={{ boxShadow: "-5px 5px 5px #000000ba" }}
             >
-              <div className="p-1 flex flex-row">
+              <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
                   width={250}
                   height={250}
-                  className="w-[150px] h-[150px] rounded-full border-2 border-black border-solid absolute -top-[25%] -left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
-                <div className="pr-3 pl-12 py-2 flex flex-col items-center justify-between w-full max-w-[200px]">
+                <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:pl-1`}
                   >
                     Lovish Singla
                   </h2>
@@ -268,18 +271,18 @@ const Masthead = (props: Props) => {
               </div>
             </div>
             <div
-              className="bg-[#D9D9D9] w-fit relative px-5 py-4 border-2 border-solid border-black rounded-tl-[50px] rounded-tr-[50px] rounded-br-[50px]"
+              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
               style={{ boxShadow: "5px 5px 5px #000000ba" }}
             >
-              <div className="p-1 flex flex-row">
+              <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/member1.jpg"}
                   alt="Team"
                   width={250}
                   height={250}
-                  className="w-[150px] h-[150px] rounded-full border-2 border-black border-solid absolute -top-[25%] -right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
-                <div className="pl-3 pr-12 py-2 flex flex-col items-center justify-between w-full max-w-[200px]">
+                <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
@@ -288,7 +291,7 @@ const Masthead = (props: Props) => {
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
                   >
-                    Tech Lead 
+                    Tech Lead
                   </span>
                 </div>
               </div>
