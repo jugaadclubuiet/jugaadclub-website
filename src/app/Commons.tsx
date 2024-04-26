@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { usePathname } from "next/navigation";
 import { Navbar, Sidebar, Footer } from "@/components/ComponentExporter";
 
 const Commons = ({
@@ -9,7 +8,6 @@ const Commons = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const pathname = usePathname();
 
   return (
     <>
