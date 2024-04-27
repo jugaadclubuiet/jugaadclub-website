@@ -3,9 +3,13 @@ import { TeamPage } from "@/components/ComponentExporter";
 
 const Team = () => {
   return (
-    <>
-      <TeamPage />
-    </>
+    <div style={{
+      backgroundImage: `url('/teamBG.png')`,
+      backgroundAttachment:"fixed",
+      backgroundRepeat: 'no-repeat',
+    }}>
+      <TeamPage/>
+    </div>
   );
 };
 export default Team;

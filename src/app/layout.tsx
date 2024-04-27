@@ -14,8 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-parallax bg-no-repeat bg-cover">
-        <Commons>{children}</Commons>
+      <body>
+        <Commons>
+          {children}
+        </Commons>
       </body>
     </html>
   );
