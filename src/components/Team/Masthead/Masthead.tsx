@@ -283,7 +283,7 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    Ashish
+                    Ashish Sharma
                   </h2>
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
