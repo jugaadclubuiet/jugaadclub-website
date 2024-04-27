@@ -19,7 +19,7 @@ const DesktopNavbar = (props: Props) => {
             <Image
               src={"/Logo.png"}
               alt="Logo"
-              width={100}
+              width={400}
               height={100}
               className="m-1 w-20 md:w-32"
             />
@@ -32,12 +32,15 @@ const DesktopNavbar = (props: Props) => {
         </div>
 
         {/* Links */}
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center justify-between ">
           {props.links.map((link, idx) => (
             <Link
               href={link.to}
               key={idx}
-              className={`uppercase font-semibold text-white mx-5 text-base hover:text-yellow-500 transition-all ease-in-out tracking-normal leading-tight ${f_inter_700.className}`}
+              style={{
+                textShadow:" 0 13.36px 8.896px #2c482e,\
+                 0 -2px 1px #aeffb4"}}
+              className={`uppercase font-semibold text-white mx-5 text-lg hover:text-yellow-500 transition-all ease-in-out tracking-2 leading-tight ${f_inter_700.className} `}
             >
               {link.name}
             </Link>

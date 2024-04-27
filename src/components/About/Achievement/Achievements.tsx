@@ -25,7 +25,7 @@ const Achievements = () => {
                   <Image
                     src={image.front.src}
                     alt={image.front.alt}
-                    width={200}
+                    width={700}
                     height={200}
                     draggable={false}
                     className={`w-full h-full border-4 rounded-lg border-solid border-white`}
@@ -35,7 +35,7 @@ const Achievements = () => {
                   <Image
                     src={image.back.src}
                     alt={image.back.alt}
-                    width={300}
+                    width={600}
                     height={300}
                     draggable={false}
                     className={`w-full h-[80%] px-5 py-4`}

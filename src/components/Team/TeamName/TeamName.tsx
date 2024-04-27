@@ -7,16 +7,16 @@ type Props = {};
 const TeamName = (props: Props) => {
   return (
     <>
-      <div className="w-full min-h-screen flex flex-row justify-center gap-60 py-20 bg-[#ffffff23]">
+      <div className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center gap-60 py-28 px-3 sm:px-0 bg-[#ffffff23]">
         <div
-          className="relative rounded-tr-[100px] rounded-bl-[100px] w-fit mr-10 bg-[#092151] px-24 py-10 flex flex-col items-start justify-center gap-1"
+          className="relative lg:rounded-tr-[100px] lg:rounded-bl-[100px] w-full sm:w-fit lg:mr-10 bg-[#092151] px-2 lg:px-24 py-10 flex flex-col lg:items-start items-center justify-center gap-1"
           style={{
             boxShadow: "-10px 10px 5px #353535",
           }}
         >
-          <div className="px-16 py-3 rounded-l-full absolute top-[190px] -right-[170px] bg-[#D9D9D9] border-[2px] border-solid border-black">
+          <div className="px-16 py-3 lg:rounded-l-full lg:absolute lg:top-[190px] lg:-right-[170px] bg-[#D9D9D9] border-[2px] border-solid border-black mb-10 lg:mb-0 w-full">
             <h2
-              className={`font-bold ${f_inter_700.className} text-xl text-black uppercase text-nowrap`}
+              className={`font-bold ${f_inter_700.className} text-xl text-black uppercase text-nowrap text-center`}
             >
               Tech Team
             </h2>
@@ -31,14 +31,14 @@ const TeamName = (props: Props) => {
           ))}
         </div>
         <div
-          className="relative rounded-tl-[100px] rounded-br-[100px] w-fit ml-10 bg-[#092151] px-24 py-10 flex flex-col items-start justify-center gap-1"
+          className="relative lg:rounded-tr-[100px] lg:rounded-bl-[100px] w-full sm:w-fit lg:mr-10 bg-[#092151] px-2 lg:px-24 py-10 flex flex-col lg:items-start items-center justify-center gap-1"
           style={{
             boxShadow: "10px 10px 5px #353535",
           }}
         >
-          <div className="px-16 py-3 rounded-r-full absolute top-[300px] -left-[210px] bg-[#D9D9D9] border-[2px] border-solid border-black">
+          <div className="px-16 py-3 lg:rounded-r-full lg:absolute lg:top-[300px] lg:-left-[210px] bg-[#D9D9D9] border-[2px] border-solid border-black mb-10 lg:mb-0 w-full">
             <h2
-              className={`font-bold ${f_inter_700.className} text-xl text-black uppercase text-nowrap`}
+              className={`font-bold ${f_inter_700.className} text-xl text-black uppercase text-nowrap text-center`}
             >
               Non Tech Team
             </h2>
