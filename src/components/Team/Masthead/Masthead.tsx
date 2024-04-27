@@ -126,7 +126,7 @@ const Masthead = (props: Props) => {
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
                   >
-                    General Secretory
+                    General Secretary
                   </span>
                 </div>
               </div>
@@ -206,7 +206,7 @@ const Masthead = (props: Props) => {
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1`}
                   >
-                    General Secretory
+                    General Secretary
                   </span>
                 </div>
               </div>
