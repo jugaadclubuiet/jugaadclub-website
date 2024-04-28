@@ -20,7 +20,7 @@ export const HeroParallax = ({
 }) => {
   const firstRow = products.slice(0, 7);
   const secondRow = products.slice(5, 12);
-  const thirdRow = products.slice(3,9);
+  const thirdRow = products.slice(2,9);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -50,14 +50,14 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-650,150]),
+    useTransform(scrollYProgress, [0, 0.2], [-550,120]),
     springConfig
   );
   return (
     <div
       ref={ref}
       style={{ position: "relative" }} 
-      className="h-[250vh] sm:h-[220vh] pt-52 sm:pt-36 overflow-hidden antialiased relative flex flex-col  [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-full pt-52 sm:pt-36 pb-16 md:pb-24 overflow-hidden antialiased relative flex flex-col  [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -103,7 +103,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-16 sm:py-28 md:py-40 px-4 w-full left-0 top-0 ">
+    <div className="max-w-7xl relative mx-auto py-12 sm:py-20 md:py-32 px-4 w-full left-0 top-0 ">
       <div>
       <h1 className="text-7xl sm:text-8xl font-bold opacity-100 dark:text-white pb-10 px-8 lg:px-8 xl:px-0"  style={{
               WebkitTextStroke: "1.15px #4a4949",

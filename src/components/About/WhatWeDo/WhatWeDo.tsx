@@ -19,6 +19,7 @@ const WhatWeDo = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-center py-5">
           <div className="relative mt-5 mb-16 lg:w-1/2">
             <Image
+              priority
               src={"/team/1.jpg"}
               alt="1"
               width={500}
@@ -29,6 +30,7 @@ const WhatWeDo = () => {
             <Image
               src={"/team/2.jpg"}
               alt="2"
+              priority
               width={500}
               height={250}
               draggable={false}
@@ -36,6 +38,7 @@ const WhatWeDo = () => {
             />
             <Image
               src={"/team/3.jpg"}
+              priority
               alt="3"
               width={500}
               height={250}

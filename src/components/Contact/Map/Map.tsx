@@ -5,11 +5,11 @@ type Props = {};
 const Map = (props: Props) => {
   return (
     <>
-      <div className="w-full min-h-screen bg-[#030028] py-6 px-20 flex flex-row items-center justify-center">
-        <div className="w-1/2 p-3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.921705701627!2d76.7543452753737!3d30.748700674576586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed92d45f4d9b%3A0x317139ae5eb2e9af!2sUIET%20Block-2!5e0!3m2!1sen!2sin!4v1714287370477!5m2!1sen!2sin" width="600" height="450" style={{"border":0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <div className="w-full min-h-screen bg-[#030028] py-6 px-20 flex flex-col-reverse md:flex-row items-center justify-center">
+        <div className="w-[300px] h-[300px] md:w-1/2 md:h-[400px] p-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.921705701627!2d76.7543452753737!3d30.748700674576586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed92d45f4d9b%3A0x317139ae5eb2e9af!2sUIET%20Block-2!5e0!3m2!1sen!2sin!4v1714287370477!5m2!1sen!2sin" width="100%" height="100%" style={{"border":0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div className="w-1/2 p-1 flex items-center justify-center flex-col">
+        <div className=" w-[400px] md:w-1/2 p-1 flex items-center justify-center flex-col">
           <div
             className="text-center p-14"
             style={{

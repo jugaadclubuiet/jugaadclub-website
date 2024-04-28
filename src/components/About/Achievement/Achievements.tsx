@@ -17,13 +17,14 @@ const Achievements = () => {
           {AchievementsImages.map((image, index) => (
             <div className=" w-[87%]  sm:w-[455px] my-6 h-max" key={index} >
                 <div className=" w-full h-full flex flex-col sm:flex-row gap-6 items-center rounded-2xl justify-center border-2 border-white py-4 px-8 bg-stone-700">
-                  <Image
+                  <Image  
+                    priority
                     src={image.back.src}
                     alt={image.back.alt}
                     width={800}
                     height={400}
                     draggable={false}
-                    className={`w-[230px] h-[180px] sm:w-[190px] sm:h-[200px] border-2 border-black shadow-black shadow-lg rounded-lg`}
+                    className={`w-[230px]  h-[180px] sm:w-[190px] sm:h-[200px] border-2 border-black shadow-black shadow-lg rounded-lg`}
                   />
                   <p
                     className={`text-white text-sm ${f_alata_400} text-center w-full rounded-md`}

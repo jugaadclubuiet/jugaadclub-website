@@ -36,7 +36,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] sm:rounded-full rounded-md border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] sm:rounded-full hover:translate-x-[-10px] hover:scale-125 rounded-md border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
                 <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
@@ -67,7 +67,7 @@ const Masthead = (props: Props) => {
               </div>
             </div>
             <div
-              className="bg-[#D9D9D9] w-full max-w-xs lg:w-fit relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
+              className="bg-[#D9D9D9] w-full max-w-xs lg:w-fit relative px-5 py-3 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
               style={{ boxShadow: "5px 5px 5px #000000ba" }}
             >
               <div className="p-1 flex flex-col sm:flex-row">
@@ -76,7 +76,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md hover:translate-x-[10px] hover:scale-125 sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
                 <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
@@ -91,7 +91,7 @@ const Masthead = (props: Props) => {
                   </span>
                 </div>
               </div>
-              <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
+              <div className="w-full flex flex-row items-center justify-around py-1s pyx-2 text-black font-black text-base">
                 <Link href={"https://www.linkedin.com/in/riya-bansal-361718230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
                   <FaLinkedin />
                 </Link>
@@ -118,7 +118,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md hover:translate-x-[-10px] hover:scale-125 sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
                 <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
@@ -158,7 +158,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[50%] lg:left-[20%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] hover:translate-y-[-20px] hover:scale-125 rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[50%] lg:left-[20%]"
                 />
                 <div className="px-5 py-2 mt-6 flex flex-col items-center justify-between w-full">
                   <h2
@@ -198,7 +198,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md hover:translate-x-[10px] hover:scale-125 sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
                 <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
@@ -213,7 +213,7 @@ const Masthead = (props: Props) => {
                   </span>
                 </div>
               </div>
-              <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
+              <div className="w-full flex flex-row items-center justify-around py-1 px-2 text-black font-black text-base">
                 <Link href={"https://www.linkedin.com/in/pragun-gupta-7884b3270/"}>
                   <FaLinkedin />
                 </Link>
@@ -231,7 +231,7 @@ const Masthead = (props: Props) => {
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-40 w-full my-2">
             <div
-              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
+              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-2 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
               style={{ boxShadow: "-5px 5px 5px #000000ba" }}
             >
               <div className="p-1 flex flex-col sm:flex-row">
@@ -240,7 +240,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] hover:translate-x-[-10px] hover:scale-125 rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
                 <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
@@ -280,7 +280,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] hover:translate-x-[10px] hover:scale-125 rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
                 <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
