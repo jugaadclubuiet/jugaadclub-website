@@ -20,7 +20,7 @@ const WhatWeDo = () => {
           <div className="relative mt-5 mb-16 lg:w-1/2">
             <Image
               priority
-              src={"/team/1.jpg"}
+              src={"/projects/iitroorkee.jpg"}
               alt="1"
               width={500}
               height={250}
@@ -28,7 +28,7 @@ const WhatWeDo = () => {
               className="border-2 border-solid border-white rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] absolute -left-[60px] -top-[10px]"
             />
             <Image
-              src={"/team/2.jpg"}
+              src={"/projects/tinker2023.jpg"}
               alt="2"
               priority
               width={500}
@@ -37,7 +37,7 @@ const WhatWeDo = () => {
               className="border-2 border-solid border-white rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] absolute -left-[5px] -bottom-[70px]"
             />
             <Image
-              src={"/team/3.jpg"}
+              src={"/projects/econveyer.jpg"}
               priority
               alt="3"
               width={500}
