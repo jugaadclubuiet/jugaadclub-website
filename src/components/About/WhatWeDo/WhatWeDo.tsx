@@ -19,6 +19,7 @@ const WhatWeDo = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-center py-5">
           <div className="relative mt-5 mb-16 lg:w-1/2">
             <Image
+              priority
               src={"/team/1.jpg"}
               alt="1"
               width={500}
@@ -29,6 +30,7 @@ const WhatWeDo = () => {
             <Image
               src={"/team/2.jpg"}
               alt="2"
+              priority
               width={500}
               height={250}
               draggable={false}
@@ -36,6 +38,7 @@ const WhatWeDo = () => {
             />
             <Image
               src={"/team/3.jpg"}
+              priority
               alt="3"
               width={500}
               height={250}
@@ -77,25 +80,25 @@ const WhatWeDo = () => {
           <div className="absolute p-1 -right-72">
             <div className="relative">
               <Image
-                src={"/team/1.jpg"}
+                src={"/projects/iitroorkee.jpg"}
                 alt="1"
-                width={250}
+                width={500}
                 height={250}
                 draggable={false}
                 className="border-2 border-solid border-white rounded-full w-[270px] h-[270px] absolute -left-[190px] -top-[100px]"
               />
               <Image
-                src={"/team/2.jpg"}
+                src={"/projects/tinker2023.jpg"}
                 alt="2"
-                width={250}
+                width={500}
                 height={250}
                 draggable={false}
                 className="border-2 border-solid border-white rounded-full w-[270px] h-[270px] absolute -left-[70px] -bottom-16"
               />
               <Image
-                src={"/team/3.jpg"}
+                src={"/projects/econveyer.jpg"}
                 alt="3"
-                width={250}
+                width={590}
                 height={250}
                 draggable={false}
                 className="border-2 border-solid border-white rounded-full w-[270px] h-[270px] relative -top-[90px] -right-[30px]"

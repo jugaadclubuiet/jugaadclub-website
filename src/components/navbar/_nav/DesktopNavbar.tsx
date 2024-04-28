@@ -17,7 +17,7 @@ const DesktopNavbar = () => {
 
   return (
     <>
-      <div className="w-full p-3 md:flex items-center justify-around hidden">
+      <div className="w-full pt-3 px-20 md:flex items-center justify-between hidden">
         {/* Logo */}
         <div className="flex flex-col items-center justify-center gap-1">
           <Link href={"/"}>

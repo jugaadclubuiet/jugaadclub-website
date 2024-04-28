@@ -32,7 +32,7 @@
     position: absolute;
     width: 100%;
     top: 40%;
-    left: 30%;
+    left: 20%;
     transform: translateY(-50%);
 }
 
@@ -51,6 +51,7 @@
     width: 100px;
     height: 35px;
     background: linear-gradient(to top, #7e6a15, #817833, #918e76);
+    transform: scale(1.1);
     .sign{
         top:-100%;
     }
@@ -63,5 +64,9 @@
         -webkit-text-stroke: #fff;
         -webkit-text-stroke-width: 0.3px;
     }
+  }
+
+  .btn:active{
+    transform: scale(0.80);
   }
   

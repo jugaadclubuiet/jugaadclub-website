@@ -31,7 +31,7 @@ const TeamName = (props: Props) => {
           ))}
         </div>
         <div
-          className="relative lg:rounded-tr-[100px] lg:rounded-bl-[100px] w-full sm:w-fit lg:mr-10 bg-[#092151] px-2 lg:px-24 py-10 flex flex-col lg:items-start items-center justify-center gap-1"
+          className="relative lg:rounded-tl-[100px] lg:rounded-br-[100px] w-full sm:w-fit lg:mr-10 bg-[#092151] px-2 lg:px-24 py-28 flex flex-col lg:items-start items-center justify-center gap-1"
           style={{
             boxShadow: "10px 10px 5px #353535",
           }}
@@ -46,7 +46,7 @@ const TeamName = (props: Props) => {
           {NonTechTeam.map((team, idx) => (
             <span
               key={idx}
-              className={`text-white uppercase ${f_inika_700.className} font-bold text-base`}
+              className={`text-white uppercase ${f_inika_700.className} font-bold text-lg`}
             >
               {team.name}
             </span>

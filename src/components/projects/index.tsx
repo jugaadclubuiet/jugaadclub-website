@@ -100,12 +100,9 @@ const CustomSlider = (props: Props) => {
               loop={true}
               zoom={{maxRatio:2}}       
               pagination={{
-                el: ".swiper-pagination",
                 clickable: true,
-                bulletClass: styles.paginationbullet,
-                bulletActiveClass: styles.paginationbulletactive,
                 renderBullet: function (index, className) {
-                  return `${<span key={index} className={`${className} ${styles.paginationbullet}`} />}`;
+                  return  '<span class="' + className + '">' + "</span>";
                 },
               }}
               
@@ -131,7 +128,7 @@ const CustomSlider = (props: Props) => {
                       </h5>
                       <h3 className={styles.newstxt}>{image.content}</h3>
                       <div className={styles.newsimg}>
-                        <Image
+                        <Image 
                           src={image.src}
                           alt={image.alt}
                           width={500}
@@ -155,15 +152,14 @@ const CustomSlider = (props: Props) => {
 const SlideNavigationButtons = () => {
   const swiper = useSwiper();
 
-  const btnStyles = `m-2 p-1 sm:p-2 md:p-2 w-[50px] h-[50px] rounded-full cursor-pointer  border-2 hover:md:border-4 border-solid border-black hover:scale-75 bg-white active:scale-110`;
-  const iconStyles = `text-lg sm:text-sm text-black text-black  md:text-3xl`;
+  const btnStyles = `my-2  sm:p-2 md:p-2 w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full cursor-pointer  border-2 hover:md:border-4 border-solid border-black hover:scale-75 bg-white flex justify-center align-center active:scale-110`;
+  const iconStyles = `text-[30px] sm:text-[30px] text-black text-black  md:text-3xl`;
 
   return (
-    <div className="flex justify-center md:flex  pt-12 md:justify-center  z-10">
+    <div className="flex justify-center md:flex gap-4 pt-4 md:justify-center  z-10">
       <div className={`prev ${btnStyles}`} onClick={() => swiper.slidePrev(1)}>
         <FaHandPointLeft className={`${iconStyles}`} />
       </div>
-      {/* <div className={styles.pagination}   ></div> */}
       <div className={`next ${btnStyles}`} onClick={() => swiper.slideNext()}>
         <FaHandPointRight className={`${iconStyles}`} />
       </div>
