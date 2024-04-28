@@ -9,7 +9,7 @@ import styles from './styles.module.css'
 const DesktopNavbar = () => {
   return (
     <>
-      <div className="w-full p-3 md:flex items-center justify-around hidden">
+      <div className="w-full pt-3 px-20 md:flex items-center justify-between hidden">
         {/* Logo */}
         <div className="flex flex-col items-center justify-center gap-1">
           <Link href={"/"}>
@@ -29,20 +29,14 @@ const DesktopNavbar = () => {
         </div>
         
         {/* Links */}
-        <div className="flex flex-row items-center justify-between ">
-            <div className="hover:scale-125 active:scale-75 flex flex-row justify-center gap-12 ">
+        <div className="flex flex-row items-center gap-2 justify-between ">
+            <div className=" flex flex-row justify-center gap-12 ">
                 <Homeicon/>
                 <Abouticon/>
                 <Teamicon/>
                 <Contacticon/>
             </div>
         </div>
-
-        {/* Search Button */}
-        <FaSearch
-          className="text-white font-black text-2xl cursor-pointer mx-2 hover:text-yellow-500 hover:scale-110 transition-all ease-in"
-          title="Search Jugaad"
-        />
       </div>
     </>
   );
