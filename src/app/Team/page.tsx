@@ -4,7 +4,7 @@ import { TeamPage } from "@/components/ComponentExporter";
 const Team = () => {
   return (
     <div style={{
-      backgroundImage: `url('/teamBG.png')`,
+      backgroundImage: `url('/backgrounds/teamBG.png')`,
       backgroundAttachment:"fixed",
       backgroundRepeat: 'no-repeat',
     }}>

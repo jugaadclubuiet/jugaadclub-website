@@ -15,7 +15,7 @@ export const Products = [
       "/projects/econveyer.jpg",
   },
   {
-    title: "Moonshot-The Chandrayaan-3 Landing",
+    title: "Moonshot (The Chandrayaan-3 Landing)",
     thumbnail:
       "/projects/moonshot.jpg",
   },
@@ -24,9 +24,8 @@ export const Products = [
     thumbnail:
       "/projects/teslacoil.jpg",
   },
-
   {
-    title: "Tinker@Jugaad(2023)",
+    title: "Tinker@Jugaad (2023)",
     thumbnail:
       "/projects/tinker2023.jpg",
   },
@@ -46,7 +45,7 @@ export const Products = [
       "/projects/rccar.jpg",
   },
   {
-    title: "Tinker@Jugaad(2024)",
+    title: "Tinker@Jugaad (2024)",
     thumbnail:
       "/projects/tinker2024.jpg",
   },
@@ -59,7 +58,17 @@ export const Products = [
     title: "Faraday Station",
     thumbnail:
       "/projects/faradaystation.jpg",
-  }  
+  },
+  {
+    title: "Mechamaze Challenge",
+    thumbnail:
+      "/mechamaze.jpg",
+  },
+  {
+    title: "Techzibition2023",
+    thumbnail:
+      "/projects/cuvisit.jpg",
+  }    
 ];
 
 export default HeroParallaxPage;

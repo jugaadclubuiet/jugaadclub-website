@@ -6,11 +6,10 @@ import Typecontent from "../info";
 
 const Home = () => {
   return (
-    <>
+    <div className=" ">
       <HeroParallaxPage/>
       <Typecontent/>
-     
-    </>
+    </div>
   );
 };
 
