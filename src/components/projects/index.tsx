@@ -129,7 +129,6 @@ const CustomSlider = (props: Props) => {
                       <h3 className={styles.newstxt}>{image.content}</h3>
                       <div className={styles.newsimg}>
                         <Image 
-                          priority
                           src={image.src}
                           alt={image.alt}
                           width={500}

@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { f_alata_400 } from "@/styles/fonts";
 import { AchievementsImages } from "./Data";
-import "@/styles/flip_card.css";
 
 const Achievements = () => {
   return (

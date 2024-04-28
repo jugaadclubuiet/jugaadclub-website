@@ -36,6 +36,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
+                  priority={true}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] sm:rounded-full hover:translate-x-[-10px] hover:scale-125 rounded-md border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
                 />
                 <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
@@ -76,6 +77,7 @@ const Masthead = (props: Props) => {
                   alt="Team"
                   width={500}
                   height={250}
+                  priority={true}
                   className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md hover:translate-x-[10px] hover:scale-125 sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
                 />
                 <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
