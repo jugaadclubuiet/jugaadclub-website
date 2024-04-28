@@ -19,7 +19,7 @@ const Masthead = (props: Props) => {
               WebkitTextStrokeColor: "#C4B567",
             }}
           >
-            Behind the Scenes: Our Team
+            MEET THE TEAM
           </h1>
         </div>
 
@@ -32,7 +32,7 @@ const Masthead = (props: Props) => {
             >
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
-                  src={"/members/member1.jpg"}
+                  src={"/members/pranav.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
@@ -52,16 +52,16 @@ const Masthead = (props: Props) => {
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
-                <Link href={"#"}>
+                <Link href={"https://www.linkedin.com/in/pranav-gupta-863179225/"}>
                   <FaLinkedin />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://instagram.com/yolo.pranav"}>
                   <FaInstagram />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"tel:8427311044"}>
                   <FaPhoneAlt />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://github.com/yolo-pranav"}>
                   <FaGithub />
                 </Link>
               </div>
@@ -72,7 +72,7 @@ const Masthead = (props: Props) => {
             >
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
-                  src={"/members/member1.jpg"}
+                  src={"/members/riya.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
@@ -92,16 +92,16 @@ const Masthead = (props: Props) => {
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
-                <Link href={"#"}>
+                <Link href={"https://www.linkedin.com/in/riya-bansal-361718230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
                   <FaLinkedin />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://instagram.com/bansalriya_21"}>
                   <FaInstagram />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"tel:7717524508"}>
                   <FaPhoneAlt />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://github.com/Riya3002"}>
                   <FaGithub />
                 </Link>
               </div>
@@ -114,7 +114,7 @@ const Masthead = (props: Props) => {
             >
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
-                  src={"/members/member1.jpg"}
+                  src={"/members/kunal.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
@@ -124,26 +124,26 @@ const Masthead = (props: Props) => {
                   <h2
                     className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
                   >
-                    kunal
+                    Kunal
                   </h2>
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
                   >
-                    General Seceratory
+                    General Secretary
                   </span>
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
-                <Link href={"#"}>
+                <Link href={"https://www.linkedin.com/in/kunal7266"}>
                   <FaLinkedin />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://www.instagram.com/kunal.o_o7266"}>
                   <FaInstagram />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"tel:8604329827"}>
                   <FaPhoneAlt />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://www.github.com/giant-nova"}>
                   <FaGithub />
                 </Link>
               </div>
@@ -154,7 +154,7 @@ const Masthead = (props: Props) => {
             >
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
-                  src={"/members/member1.jpg"}
+                  src={"/members/harsh.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
@@ -174,13 +174,13 @@ const Masthead = (props: Props) => {
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
-                <Link href={"#"}>
+                <Link href={"https://www.linkedin.com/in/harsh-anand-singh-08"}>
                   <FaLinkedin />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://instagram.com/harshanand"}>
                   <FaInstagram />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"tel:9877809088"}>
                   <FaPhoneAlt />
                 </Link>
                 <Link href={"#"}>
@@ -194,7 +194,7 @@ const Masthead = (props: Props) => {
             >
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
-                  src={"/members/member1.jpg"}
+                  src={"/members/pragun.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
@@ -209,21 +209,21 @@ const Masthead = (props: Props) => {
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
                   >
-                    General Seceratory
+                    General Secretary
                   </span>
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
-                <Link href={"#"}>
+                <Link href={"https://www.linkedin.com/in/pragun-gupta-7884b3270/"}>
                   <FaLinkedin />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://instagram.com/pragun77"}>
                   <FaInstagram />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"tel:8360254763"}>
                   <FaPhoneAlt />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://github.com/Pragun77"}>
                   <FaGithub />
                 </Link>
               </div>
@@ -236,7 +236,7 @@ const Masthead = (props: Props) => {
             >
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
-                  src={"/members/member1.jpg"}
+                  src={"/members/lovish.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
@@ -251,21 +251,21 @@ const Masthead = (props: Props) => {
                   <span
                     className={`${f_inter_700.className} text-[#A19B15] text-2xl font-black py-1 text-center`}
                   >
-                    Non tech Lead
+                    Non Tech Lead
                   </span>
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
-                <Link href={"#"}>
+                <Link href={"https://www.linkedin.com/in/lovish-k-singla"}>
                   <FaLinkedin />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://instagram.com/lovi.singla"}>
                   <FaInstagram />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"tel:9872906146"}>
                   <FaPhoneAlt />
                 </Link>
-                <Link href={"#"}>
+                <Link href={"https://github.com/Lovish-Singla"}>
                   <FaGithub />
                 </Link>
               </div>
@@ -276,7 +276,7 @@ const Masthead = (props: Props) => {
             >
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
-                  src={"/members/member1.jpg"}
+                  src={"/members/ashish.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
