@@ -32,7 +32,7 @@ const Input = () => {
       )
         throw new Error(`All fields are required`);
 
-      const res = await fetch(`/api/send`, {
+      const res = await fetch(`/api/save-query`, {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
