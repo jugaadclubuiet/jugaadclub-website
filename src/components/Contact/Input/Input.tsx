@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { ContactInfo } from "@/types/contact";
+import toast from "react-hot-toast";
 
 const Input = () => {
   const [formData, setFormData] = useState<ContactInfo>({
@@ -41,9 +42,9 @@ const Input = () => {
 
       const data = await res.json();
       if (data.success) {
-        alert("Query sent successfully.");
+        toast.success("Message sent successfully, Thanks!");
       } else {
-        alert("Error occurred while sending email.");
+        toast.error("Error sending your query, try again later.");
       }
     } catch (err) {
       console.error({ err });
