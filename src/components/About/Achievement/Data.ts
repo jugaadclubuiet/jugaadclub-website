@@ -2,44 +2,29 @@ import { DuoImageType } from "@/types/Image";
 
 export const AchievementsImages: DuoImageType[] = [
   {
-    front: {
-      src: "/team/achievement2.jpg",
-      alt: "1",
-      title: "Achievement 1",
-    },
     back: {
-      src: "/team/1.jpg",
+      src: "/projects/econveyer.jpg",
       alt: "back 1",
       title:
-        "The Jugaad-Robotics club at UIET shone at Cognizance 2024- IIT Roorkee, impressing with IoT projects in Nano Navigator. Their micromouse wowed with maze-solving precision, earning praise for teamwork.",
+        "Jugaad Robotics Club secured first position at Techzibition showcasing Econveyer project.Our E-Conveyor project impressed judges with its innovative approach, aligning with current industrial needs for efficient material handling.",
     },
   },
   {
-    front: {
-      src: "/team/achievements.jpg",
-      alt: "2",
-      title:
-        "Achievement 2",
-    },
+  
     back: {
-      src: "/team/2.jpg",
+      src: "/projects/teslacoil.jpg",
       alt: "back 2",
       title:
-        "Jugaad Robotics Club secured first position at Techzibition, IIT Roorkee, showcasing Faraday Station project.",
-    },
+        "Jugaad Robotics Club secured first position at Techzibition 2024. By harnessing Nikola Tesla's pioneering work, we've engineered a system that wirelessly transfers energy, offering a futuristic solution to electric vehicle charging."
   },
+},
   {
-    front: {
-      src: "/team/achievement3.jpg",
-      alt: "3",
-      title:
-        "Achievement 3",
-    },
+ 
     back: {
-      src: "/team/3.jpg",
+      src: "/projects/faradaystation.jpg",
       alt: "back 3",
       title:
-        "Jugaad-Robotics club impressed at Cognizance 2024-IIT Roorkee, showcasing an innovative Mobile Contactless EV Charging Model in Faraday Station, earning praise for dedication and teamwork.",
+        "Jugaad Robotics Club showcased Faraday Station project at cognizance, IIT roorkee.Faraday Station introduced a revolutionary Mobile Contactless EV Charging Model, enabling electric vehicle charging on the move.",
     },
   },
 ];

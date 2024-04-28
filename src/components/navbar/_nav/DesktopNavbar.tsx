@@ -2,14 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { f_inter_700 } from "@/styles/fonts";
-import { FaSearch } from "react-icons/fa";
-import { NavigationLinks } from "@/types/LinkTypes";
+import {  FaEnvelope, FaSearch } from "react-icons/fa";
+import { FaHouse, FaPeopleGroup, FaRegFileLines } from "react-icons/fa6";
+import styles from './styles.module.css'
 
-type Props = {
-  links: NavigationLinks[];
-};
-
-const DesktopNavbar = (props: Props) => {
+const DesktopNavbar = () => {
   return (
     <>
       <div className="w-full p-3 md:flex items-center justify-around hidden">
@@ -30,21 +27,15 @@ const DesktopNavbar = (props: Props) => {
             </h1>
           </Link>
         </div>
-
+        
         {/* Links */}
         <div className="flex flex-row items-center justify-between ">
-          {props.links.map((link, idx) => (
-            <Link
-              href={link.to}
-              key={idx}
-              style={{
-                textShadow:" 0 13.36px 8.896px #2c482e,\
-                 0 -2px 1px #aeffb4"}}
-              className={`uppercase font-semibold text-white mx-5 text-lg hover:text-yellow-500 transition-all ease-in-out tracking-2 leading-tight ${f_inter_700.className} `}
-            >
-              {link.name}
-            </Link>
-          ))}
+            <div className="hover:scale-125 active:scale-75 flex flex-row justify-center gap-12 ">
+                <Homeicon/>
+                <Abouticon/>
+                <Teamicon/>
+                <Contacticon/>
+            </div>
         </div>
 
         {/* Search Button */}
@@ -58,3 +49,53 @@ const DesktopNavbar = (props: Props) => {
 };
 
 export default DesktopNavbar;
+
+
+const Homeicon = ()=>{
+  return(
+    <button className={styles.btn}>
+      <Link href={"/"}>
+        <span className={styles.sign}>
+          <FaHouse className="text-white w-[30px]" />
+        </span>
+        <span className={styles.contents}>Home</span>
+      </Link>
+    </button>
+  )
+}
+const Abouticon = ()=>{
+  return(
+    <button className={styles.btn}>
+      <Link href={"/About"}>
+        <span className={styles.sign}>
+          <FaRegFileLines className="text-white w-[30px]" />
+        </span>
+        <span className={styles.contents}>About</span>
+      </Link>
+    </button>
+  )
+}
+const Teamicon = ()=>{
+  return(
+    <button className={styles.btn}>
+      <Link href={"/Team"}>
+        <span className={styles.sign}>
+          <FaPeopleGroup className="text-white w-[30px]" />
+        </span>
+        <span className={styles.contents}>Team</span>
+      </Link>
+    </button>
+  )
+}
+const Contacticon = ()=>{
+  return(
+    <button className={styles.btn}>
+      <Link href={"/"}>
+        <span className={styles.sign}>
+          <FaEnvelope className="text-white w-[30px]" />
+        </span>
+        <span className={styles.contents}>Contact</span>
+      </Link>
+    </button>
+  )
+}

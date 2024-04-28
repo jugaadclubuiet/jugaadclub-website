@@ -1,7 +1,7 @@
 "use client";
 import { Title } from "./text"
 function Typecontent() {
-  const Words = [
+  const Wordone = [
     {
       text: "Innovating",
     },
@@ -11,6 +11,10 @@ function Typecontent() {
     {
       text: "Boundaries:",
     },
+ 
+  ];
+  const Wordtwo = [
+
     {
       text: "The",
     },
@@ -27,8 +31,10 @@ function Typecontent() {
   ];
   return (
     <div className="flex flex-col items-center justify-center "> 
-      <Title words={Words} />
+      <Title words={Wordone} />
+      <Title words={Wordtwo} />
     </div>
   );
 }
+
 export default Typecontent;

@@ -3,8 +3,8 @@ import "./globals.css";
 import Commons from "./Commons";
 
 export const metadata: Metadata = {
-  title: "Jugaad",
-  description: "UIET Jugaad Club",
+  title: "Jugaad - Robotic club of UIET",
+  description: " Jugaad Club, the premier robotics club of UIET, Panjab University, Chandigarh",
 };
 
 export default function RootLayout({

@@ -1,5 +1,4 @@
 "use client";
-
 import { cn } from "@/utils/cn";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
@@ -139,7 +138,7 @@ export const Title = ({
   };
 
   return (
-    <div className={cn("flex space-x-1 my-6", className)}>
+    <div className={cn("flex space-x-1 mt-6 ", className)}>
       <motion.div
         className="overflow-hidden pb-2"
         initial={{
@@ -155,7 +154,7 @@ export const Title = ({
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+          className="text-lg sm:text-2xl md:text-3xl lg:text:4xl xl:text-5xl font-bold"
           style={{
             whiteSpace: "nowrap",
           }}
@@ -177,7 +176,7 @@ export const Title = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-blue-500",
+          "block rounded-sm w-[4px]  h-6 xl:h-12 bg-blue-500",
           cursorClassName
         )}
       ></motion.span>
