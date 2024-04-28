@@ -12,11 +12,11 @@ type Props = {
 };
 
 const MobileNavbar = (props: Props) => {
-  const [searchValue, setSearchValue] = useState<string>("");
+//   const [searchValue, setSearchValue] = useState<string>("");
 
-  const handleSearch = () => {
-    console.log({ searchValue });
-  };
+//   const handleSearch = () => {
+//     console.log({ searchValue });
+//   };
 
   const [menuStatus, setMenuStatus] = useState<boolean>(true);
 
@@ -56,7 +56,7 @@ const MobileNavbar = (props: Props) => {
             />
             <div className="p-1 bg-[#00000099] rounded-md absolute top-20 mt-5 left-0 right-0 w-full">
               <div className="flex flex-col gap-2 text-white">
-                <div className="w-full flex flex-row gap-0 items-center justify-center">
+                {/* <div className="w-full flex flex-row gap-0 items-center justify-center">
                   <input
                     type="text"
                     name="searchValue"
@@ -73,7 +73,7 @@ const MobileNavbar = (props: Props) => {
                       className="text-white font-black text-2xl cursor-pointer"
                     />
                   </div>
-                </div>
+                </div> */}
                 {props.links.map((link, idx) => (
                   <Link
                     href={link.to}

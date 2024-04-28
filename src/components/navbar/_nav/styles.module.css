@@ -59,7 +59,7 @@
   
   .btn:hover {
     .contents{
-        font-size: 14px;
+        font-size: 16px;
         top:50%;
         -webkit-text-stroke: #fff;
         -webkit-text-stroke-width: 0.3px;

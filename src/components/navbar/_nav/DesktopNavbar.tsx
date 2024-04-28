@@ -9,11 +9,11 @@ import { FaHouse, FaPeopleGroup, FaRegFileLines } from "react-icons/fa6";
 import styles from "./styles.module.css";
 
 const DesktopNavbar = () => {
-  const [searchValue, setSearchValue] = useState<string>("");
+//   const [searchValue, setSearchValue] = useState<string>("");
 
-  const handleSearch = () => {
-    console.log({ searchValue });
-  };
+//   const handleSearch = () => {
+//     console.log({ searchValue });
+//   };
 
   return (
     <>
@@ -38,7 +38,7 @@ const DesktopNavbar = () => {
 
         {/* Links */}
         <div className="flex flex-row items-center justify-between ">
-          <div className="hover:scale-125 active:scale-75 flex flex-row justify-center gap-12 ">
+          <div className="flex flex-row justify-center gap-12 ">
             <Homeicon />
             <Abouticon />
             <Teamicon />
@@ -47,8 +47,8 @@ const DesktopNavbar = () => {
         </div>
 
         {/* Search Button */}
-        <div className="flex flex-row items-center gap-2">
-          <input
+        {/* <div className="flex flex-row items-center gap-2"> */}
+          {/* <input
             type="text"
             name="searchValue"
             id="searchValue"
@@ -62,8 +62,8 @@ const DesktopNavbar = () => {
             onClick={handleSearch}
             className="text-white font-black text-2xl cursor-pointer mx-2 hover:text-yellow-500 hover:scale-110 transition-all ease-in"
             title="Search Jugaad"
-          />
-        </div>
+          /> */}
+        {/* </div> */}
       </div>
     </>
   );
