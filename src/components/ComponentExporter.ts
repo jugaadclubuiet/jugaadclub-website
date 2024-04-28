@@ -23,5 +23,3 @@ export { default as ContactInput } from "./Contact/Input/Input";
 export { default as ContactMap } from "./Contact/Map/Map";
 
 export { default as Footer } from "./footer/index";
-
-export { default as EmailTemplate } from "./Contact/Input/EmailTemplate";
