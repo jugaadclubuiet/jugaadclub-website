@@ -90,7 +90,7 @@ const Teamicon = ()=>{
 const Contacticon = ()=>{
   return(
     <button className={styles.btn}>
-      <Link href={"/"}>
+      <Link href={"/Contact"}>
         <span className={styles.sign}>
           <FaEnvelope className="text-white w-[30px]" />
         </span>

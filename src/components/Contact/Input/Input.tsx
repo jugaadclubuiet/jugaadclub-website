@@ -127,10 +127,10 @@ const Input = (props: Props) => {
             </p>
             <p className="flex flex-col px-1 gap-1">
               <span className="text-white font-serif font-normal text-sm">
-                CONTACT 1: <span className="font-light">(+91) 24364 12748</span>
+                Pranav: <span className="font-light">(+91) 8427311044</span>
               </span>
               <span className="text-white font-serif font-normal">
-                CONTACT 2: <span className="font-light">(+91) 24364 12748</span>
+                Kunal: <span className="font-light">(+91) 8604329827</span>
               </span>
             </p>
           </div>
