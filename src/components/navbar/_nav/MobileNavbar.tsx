@@ -12,6 +12,12 @@ type Props = {
 };
 
 const MobileNavbar = (props: Props) => {
+  const [searchValue, setSearchValue] = useState<string>("");
+
+  const handleSearch = () => {
+    console.log({ searchValue });
+  };
+
   const [menuStatus, setMenuStatus] = useState<boolean>(true);
 
   const toggleMenu = () => setMenuStatus((prev) => !prev);
@@ -49,8 +55,25 @@ const MobileNavbar = (props: Props) => {
               onClick={toggleMenu}
             />
             <div className="p-1 bg-[#00000099] rounded-md absolute top-20 mt-5 left-0 right-0 w-full">
-              <div className="flex flex-col gap-1 justify-center items-center text-white">
-              
+              <div className="flex flex-col gap-2 text-white">
+                <div className="w-full flex flex-row gap-0 items-center justify-center">
+                  <input
+                    type="text"
+                    name="searchValue"
+                    id="searchValue"
+                    placeholder="Type here..."
+                    value={searchValue}
+                    onChange={({ target }) => setSearchValue(target.value)}
+                    required={true}
+                    className="w-full px-3 py-2 rounded-l-md bg-white text-blue-950 outline-none text-base font-mono"
+                  />
+                  <div className="p-2 rounded-r-md bg-yellow-700">
+                    <FaSearch
+                      onClick={handleSearch}
+                      className="text-white font-black text-2xl cursor-pointer"
+                    />
+                  </div>
+                </div>
                 {props.links.map((link, idx) => (
                   <Link
                     href={link.to}
