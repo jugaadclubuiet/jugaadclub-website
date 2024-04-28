@@ -36,3 +36,4 @@ export const Images_Projects = [
     content:"Faraday Station introduced a revolutionary Mobile Contactless EV Charging Model, enabling electric vehicle charging on the move." 
   },
 ];
+
