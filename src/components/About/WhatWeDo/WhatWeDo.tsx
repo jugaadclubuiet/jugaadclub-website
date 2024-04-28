@@ -74,7 +74,6 @@ const WhatWeDo = () => {
             complete beginner, there{`'`}s something for everyone at Jugaad
             Robotics Club.
           </p>
-
           <div className="absolute p-1 -right-72">
             <div className="relative">
               <Image

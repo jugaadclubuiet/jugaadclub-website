@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   text-decoration: none;
   list-style-type: none;
+  transition:.5s
 }
 
 *::-webkit-scrollbar {
