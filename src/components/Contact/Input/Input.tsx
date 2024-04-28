@@ -2,26 +2,54 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { ContactInfo } from "@/types/contact";
 
-type Props = {};
-
-const Input = (props: Props) => {
-  const [formData, setFormData] = useState({
-    username: "",
+const Input = () => {
+  const [formData, setFormData] = useState<ContactInfo>({
+    name: "",
     phoneNumber: "",
     email: "",
     query: "",
   });
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
 
-    console.log({ formData });
+    try {
+      if (
+        !formData.name ||
+        !formData.email ||
+        !formData.phoneNumber ||
+        !formData.query
+      )
+        throw new Error(`All fields are required`);
+
+      const res = await fetch(`/api/send`, {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        alert("Query sent successfully.");
+      } else {
+        alert("Error occurred while sending email.");
+      }
+    } catch (err) {
+      console.error({ err });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -47,8 +75,8 @@ const Input = (props: Props) => {
           >
             <input
               type="text"
-              name="username"
-              value={formData.username}
+              name="name"
+              value={formData.name}
               onChange={handleInputChange}
               id="usersname"
               placeholder="Your Name"
@@ -89,7 +117,8 @@ const Input = (props: Props) => {
             />
             <button
               type="submit"
-              className="uppercase px-10 py-2 rounded-2xl bg-white text-black font-semibold text-xl font-serif text-center"
+              disabled={loading}
+              className="disabled:cursor-wait disabled:bg-[#ffffff84] uppercase px-10 py-2 rounded-2xl bg-white text-black font-semibold text-xl font-serif text-center"
             >
               Submit
             </button>
