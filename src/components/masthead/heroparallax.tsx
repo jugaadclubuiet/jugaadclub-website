@@ -164,7 +164,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-52 w-[10rem] sm:h-[15rem] sm:w-[22rem]  relative flex-shrink-0 hover:border-solid hover:border-stone-500 hover:border-4 border-solid border-slate-100 border-2"
+      className="group/product h-52 w-[10rem] sm:h-[18rem] sm:w-[22rem]  relative flex-shrink-0 hover:border-solid hover:border-stone-500 hover:border-4 border-solid border-slate-100 border-2"
     >
         <Image
           src={product.thumbnail}
