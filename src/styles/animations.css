@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* left side */
+  .animate-shadow-left {
+    transition: all 0.25s linear;
+    box-shadow: 8px 8px 8px #000000;
+  }
+
+  .animate-shadow-left:hover {
+    box-shadow: 16px 16px 8px #000000;
+    transform: translate(-10px, -10px);
+  }
+
+  .lead-img-left {
+    transition: all 0.25s linear;
+    box-shadow: 5px 5px 5px #000000;
+  }
+
+  .animate-shadow-left:hover .lead-img-left {
+    box-shadow: 10px 10px 10px #000000;
+    transform: translate(-5px, -5px);
+  }
+
+  /* center side */
+  .animate-shadow-center {
+    transition: all 0.25s linear;
+    box-shadow: 0 8px 8px #000000;
+  }
+
+  .animate-shadow-center:hover {
+    box-shadow: 0 16px 8px #000000;
+    transform: translate(0, -10px);
+  }
+
+  .lead-img-center {
+    transition: all 0.25s linear;
+    box-shadow: 0 5px 5px #000000;
+  }
+
+  .animate-shadow-center:hover .lead-img-center {
+    box-shadow: 0 10px 10px #000000;
+    transform: translate(0, -5px);
+  }
+
+  /* right side */
+  .animate-shadow-right {
+    transition: all 0.25s linear;
+    box-shadow: -8px 8px 8px #000000;
+  }
+
+  .animate-shadow-right:hover {
+    box-shadow: -16px 16px 8px #000000;
+    transform: translate(10px, -10px);
+  }
+
+  .lead-img-right {
+    transition: all 0.25s linear;
+    box-shadow: -5px 5px 5px #000000;
+  }
+
+  .animate-shadow-right:hover .lead-img-right {
+    box-shadow: -10px 10px 10px #000000;
+    transform: translate(5px, -5px);
+  }
+}
