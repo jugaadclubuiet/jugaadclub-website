@@ -43,6 +43,12 @@ const Input = () => {
       const data = await res.json();
       if (data.success) {
         toast.success("Message sent successfully, Thanks!");
+        setFormData((prev) => ({
+          name: "",
+          phoneNumber: "",
+          email: "",
+          query: "",
+        }));
       } else {
         toast.error("Error sending your query, try again later.");
       }
