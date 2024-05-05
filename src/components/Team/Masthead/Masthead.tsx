@@ -3,6 +3,7 @@ import { f_inter_700 } from "@/styles/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin, FaInstagram, FaPhoneAlt, FaGithub } from "react-icons/fa";
+import "@/styles/animations.css";
 
 type Props = {};
 
@@ -26,10 +27,7 @@ const Masthead = (props: Props) => {
         {/* Blocks */}
         <div className="w-full py-5 px-5 mt-20 relative flex flex-col items-start gap-[161px]">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-40 my-2 w-full">
-            <div
-              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
-              style={{ boxShadow: "-5px 5px 5px #000000ba" }}
-            >
+            <div className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px] lg:animate-shadow-left animate-shadow-center">
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/pranav.jpg"}
@@ -37,11 +35,11 @@ const Masthead = (props: Props) => {
                   width={500}
                   height={250}
                   priority={true}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] sm:rounded-full hover:translate-x-[-10px] hover:scale-125 rounded-md border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] sm:rounded-full rounded-md border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%] lg:lead-img-left lead-img-center"
                 />
                 <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:my-2 lg:my-0`}
                   >
                     Pranav Gupta
                   </h2>
@@ -53,7 +51,9 @@ const Masthead = (props: Props) => {
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-3 pyx-2 text-black font-black text-base">
-                <Link href={"https://www.linkedin.com/in/pranav-gupta-863179225/"}>
+                <Link
+                  href={"https://www.linkedin.com/in/pranav-gupta-863179225/"}
+                >
                   <FaLinkedin />
                 </Link>
                 <Link href={"https://instagram.com/yolo.pranav"}>
@@ -67,10 +67,7 @@ const Masthead = (props: Props) => {
                 </Link>
               </div>
             </div>
-            <div
-              className="bg-[#D9D9D9] w-full max-w-xs lg:w-fit relative px-5 py-3 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
-              style={{ boxShadow: "5px 5px 5px #000000ba" }}
-            >
+            <div className="bg-[#D9D9D9] w-full max-w-xs lg:w-fit relative px-5 py-3 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px] animate-shadow-center lg:animate-shadow-right">
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/riya.jpg"}
@@ -78,11 +75,11 @@ const Masthead = (props: Props) => {
                   width={500}
                   height={250}
                   priority={true}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md hover:translate-x-[10px] hover:scale-125 sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%] lead-img-center lg:lead-img-right"
                 />
                 <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:pr-4`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:pr-4 sm:my-4 lg:my-0`}
                   >
                     Riya Bansal
                   </h2>
@@ -94,7 +91,11 @@ const Masthead = (props: Props) => {
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-1s pyx-2 text-black font-black text-base">
-                <Link href={"https://www.linkedin.com/in/riya-bansal-361718230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
+                <Link
+                  href={
+                    "https://www.linkedin.com/in/riya-bansal-361718230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  }
+                >
                   <FaLinkedin />
                 </Link>
                 <Link href={"https://instagram.com/bansalriya_21"}>
@@ -110,21 +111,18 @@ const Masthead = (props: Props) => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-40 xl:gap-32 lg:gap-10 w-full my-2">
-            <div
-              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
-              style={{ boxShadow: "-5px 5px 5px #000000ba" }}
-            >
+            <div className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px] animate-shadow-center lg:animate-shadow-left">
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/kunal.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md hover:translate-x-[-10px] hover:scale-125 sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%] lead-img-center lg:lead-img-left"
                 />
                 <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:my-2 lg:my-0`}
                   >
                     Kunal
                   </h2>
@@ -150,21 +148,18 @@ const Masthead = (props: Props) => {
                 </Link>
               </div>
             </div>
-            <div
-              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-br-[50px]"
-              style={{ boxShadow: "-5px 5px 5px #000000ba" }}
-            >
+            <div className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-br-[50px] animate-shadow-center">
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/harsh.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] hover:translate-y-[-20px] hover:scale-125 rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[50%] lg:left-[20%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[50%] lg:left-[20%] lead-img-center"
                 />
                 <div className="px-5 py-2 mt-6 flex flex-col items-center justify-between w-full">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:my-2 lg:my-0`}
                   >
                     Harsh Anand
                   </h2>
@@ -190,21 +185,18 @@ const Masthead = (props: Props) => {
                 </Link>
               </div>
             </div>
-            <div
-              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
-              style={{ boxShadow: "5px 5px 5px #000000ba" }}
-            >
+            <div className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px] animate-shadow-center lg:animate-shadow-right">
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/pragun.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md hover:translate-x-[10px] hover:scale-125 sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%] lead-img-center lg:lead-img-right"
                 />
                 <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:my-3 lg:my-0`}
                   >
                     Pragun Gupta
                   </h2>
@@ -216,7 +208,9 @@ const Masthead = (props: Props) => {
                 </div>
               </div>
               <div className="w-full flex flex-row items-center justify-around py-1 px-2 text-black font-black text-base">
-                <Link href={"https://www.linkedin.com/in/pragun-gupta-7884b3270/"}>
+                <Link
+                  href={"https://www.linkedin.com/in/pragun-gupta-7884b3270/"}
+                >
                   <FaLinkedin />
                 </Link>
                 <Link href={"https://instagram.com/pragun77"}>
@@ -232,21 +226,18 @@ const Masthead = (props: Props) => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-40 w-full my-2">
-            <div
-              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-2 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
-              style={{ boxShadow: "-5px 5px 5px #000000ba" }}
-            >
+            <div className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-2 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-bl-[50px] animate-shadow-center lg:animate-shadow-left">
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/lovish.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] hover:translate-x-[-10px] hover:scale-125 rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] left-[27%] lg:-top-[25%] lg:-left-[25%] lead-img-center lg:lead-img-left"
                 />
                 <div className="lg:pr-3 lg:pl-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:pl-1`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:pl-1 sm:my-4 lg:my-0`}
                   >
                     Lovish Singla
                   </h2>
@@ -272,21 +263,18 @@ const Masthead = (props: Props) => {
                 </Link>
               </div>
             </div>
-            <div
-              className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px]"
-              style={{ boxShadow: "5px 5px 5px #000000ba" }}
-            >
+            <div className="bg-[#D9D9D9] lg:w-fit w-full max-w-xs relative px-5 py-4 border-2 border-solid border-black lg:rounded-tl-[50px] lg:rounded-tr-[50px] lg:rounded-br-[50px] animate-shadow-center lg:animate-shadow-right">
               <div className="p-1 flex flex-col sm:flex-row">
                 <Image
                   src={"/members/ashish.jpg"}
                   alt="Team"
                   width={500}
                   height={250}
-                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] hover:translate-x-[10px] hover:scale-125 rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%]"
+                  className="w-full max-h-[250px] sm:w-[150px] sm:h-[150px] rounded-md sm:rounded-full border-2 border-black border-solid sm:absolute -top-[50%] right-[27%] lg:-top-[25%] lg:-right-[25%] lead-img-center lg:lead-img-right"
                 />
                 <div className="lg:pl-3 lg:pr-12 py-2 px-5 mt-6 lg:mt-0 flex flex-col items-center justify-between w-full lg:max-w-[200px]">
                   <h2
-                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center`}
+                    className={`text-[#000] text-2xl font-normal ${f_inter_700.className} text-wrap text-center sm:my-2 lg:my-0`}
                   >
                     Ashish Sharma
                   </h2>
