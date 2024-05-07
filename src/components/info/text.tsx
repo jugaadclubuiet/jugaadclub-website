@@ -53,7 +53,7 @@ export const Content = ({
                   initial={{}}
                   key={`char-${index}`}
                   className={cn(
-                    `dark:text-white text-black opacity-0 hidden`,
+                    ` text-white opacity-0 hidden`,
                     word.className
                   )}
                 >
@@ -124,7 +124,7 @@ export const Title = ({
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`dark:text-white text-black `, word.className)}
+                  className={cn(`dark:text-white text-white `, word.className)}
                 >
                   {char}
                 </span>
