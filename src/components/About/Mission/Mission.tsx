@@ -20,12 +20,7 @@ const Mission = () => {
           <p
             className={`${f_alata_400.className} text-base text-center px-5 sm:px-12 w-full my-2 text-white bg-[#000000ba]`}
             >
-            At Jugaad Robotics Club, our mission is simple yet ambitious: to
-            ignite curiosity, inspire innovation, and empower individuals to
-            shape the future through robotics and automation. We believe that
-            through collaborative projects, workshops, and competitions, we can
-            cultivate a generation of problem solvers and change makers who are
-            ready to tackle real-world challenges head-on.
+            At Jugaad Robotics Club, our mission is to ignite curiosity, inspire innovation, and empower individuals to shape the future through robotics and automation. We believe that through collaborative projects, workshops, and competitions, we can cultivate a generation of problem solvers and change makers who are ready to tackle real-world challenges head-on.
           </p>
           <MissionImage/>
         </div>
@@ -43,7 +38,7 @@ const Mission = () => {
           <p
             className={`${f_alata_400.className} text-xl flex justify-center items-center xl:px-20 text-center py-4 my-2 text-white`}
           >
-            At Jugaad Robotics Club, our mission is simple yet ambitious: to
+            At Jugaad Robotics Club, our mission is to
             ignite curiosity, inspire innovation, and empower individuals to
             shape the future through robotics and automation. We believe that
             through collaborative projects, workshops, and competitions, we can
